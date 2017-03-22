@@ -68,6 +68,8 @@
     <script src="https://raw.githubusercontent.com/scottjehl/Respond/master/dest/respond.min.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
+  <script src="https://use.typekit.net/amk8qye.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
   <!--[if lt IE 9]>
     <body class="<?php print $classes . ' ieclass'; ?>" <?php print $attributes;?>>

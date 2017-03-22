@@ -16,9 +16,11 @@
 /* Variables */
 
 /* Generic colors */
-$dk-blue: #283A77;
+$dk-blue: #0B3B5A;
+$med-blue: #437099;
+$orange: #FF8B00;
+
 $med-dk-blue: #293B77;
-$med-blue: #478BD8;
 $med-lt-blue: #9ED7F7;
 $lt-blue: #B9E2F8;
 $dk-gray: #404347;
@@ -31,12 +33,14 @@ $sienna: #D7522D;
 $lt-yellow: #FFF4C2;
 
 /* fonts */
-$body-font: 'LatoLight';
-$bold-font: 'LatoBold';
-$lt-font: 'LatoLight';
-$it-font: 'LatoLightItalic';
-$reg-font: 'LatoRegular';
-$semi-font: 'LatoRegular';
+$body-font: 'freight-sans-pro';
+$karmina: 'karmina';
+$lt-font: 300;
+$book-font: 400;
+$med-font: 500;
+$semi-font: 600;
+
+
 
 $raleway-lt: 'ralewaylight';
 $raleway-reg: 'ralewayregular';
@@ -44,7 +48,7 @@ $raleway-semi: 'ralewaysemibold';
 $raleway-bold: 'ralewaybold';
 
     
-$header-color: $lt-blue;
+$header-color: $dk-blue;
 $header-padding-lg: 25px 0 30px;
 
 $search-position-lg: 40px 0 0 0;
@@ -60,57 +64,57 @@ $hero-img-img: url('../images/hero_img2_reduced.jpg') 0 0 no-repeat;
 
 
 /* navbar */
-$nav-color-lg: $med-lt-blue;
-$navlink-bkgrd-active: $white;
+$nav-color-lg: $orange;
+$navlink-bkgrd-active: $dk-blue;
 $navlink-link-lg: $dk-blue;
-$navlink-link-active: $dk-blue;
-$navlink-padding-lg: 15px 15px 15px 15px;
-$navlink-size-lg: 20px;
-$navlink-font: 'ralewayregular';
+$navlink-link-active: $white;
+$navlink-padding-lg: 15px 45px 15px 45px;
+$navlink-size-lg: 24px;
+$navlink-font: $body-font;
 
 /* submenu */
 $submenu-color: $white;
 $submenu-link-bkgrd-active: $lt-gray;
 $submenu-link-link: $med-blue;
 $submenu-link-link-active: $dk-blue;
-$submenu-link-padding: 15px 15px 15px 15px;
-$submenu-link-size: 1.2em;
-$submenu-link-font: $reg-font;
+$submenu-link-padding: 6px 45px 7px 45px;
+$submenu-link-size: 24px;
+$submenu-link-font: $book-font;
 
 
 /* Main content */
 $body-color: $black;
-$body-size: 1.3em;
-$body-height: 1.5em;
+$body-size: 1.55em;
+$body-height: 1.5;
 $link-color: $med-dk-blue;
 
 
-$main-container-margin-lg: 40px 0 0 0;
-$main-content-margin-lg: 0 8% 80px 8%;
+$main-container-margin-lg: 78px 0 0 0;
+$main-content-margin-lg: 40px 8% 80px 0;
 
 
-$h1-size-lg: 3.7rem;
-$h1-color: $sienna;
-$h1-style: $raleway-lt;
-$h1-height-lg: 1.2em;;
-$h1-margin-lg: 20px 0;
+$h1-size-lg: 6rem;
+$h1-color: $dk-blue;
+$h1-style: $karmina;
+$h1-height-lg: 1.2em;
+$h1-margin-lg: 0 0 -23px 0;
 
 $h2-size-lg: 2.0rem;
-$h2-color: $sienna;
-$h2-style: $raleway-semi;
+$h2-color: $med-blue;
+$h2-style: $karmina;
 $h2-height-lg: 1.5em;;
 $h2-margin-lg: 20px 0 0 0;
 
 $h3-size-lg: 1.0em;
-$h3-color: $med-blue;
-$h3-style: $raleway-bold;
+$h3-color: $black;
+$h3-style: $karmina;
 $h3-height-lg: 1.0em;
 $h3-margin-lg: 1.3em 0 0.05em 0;
 
 $paragraph-margin: 0 0 1.0em 0;
 $list-margin-lg: -0.8em 0 0.5em 0.8em;
 
-$footer-color: $lt-yellow;
+$footer-color: $white;
 $footer-border-color: $dk-blue;
 
 

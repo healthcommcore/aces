@@ -130,14 +130,26 @@
     <?php endif; ?>
 
 <?php if (!empty($page['hero'])): ?>
-  <div class="hero">
-    <?php print render($page['hero']); ?>
+  <div class="container">
+    <div class="hero">
+      <?php print render($page['hero']); ?>
+    </div>
   </div>
 <?php endif; ?>
 <div class="main-container content-area-color">
+  <div class="main-container-margin">
+  <?php if( !$is_front ) : ?>
+    <div class="h1-container">
+      <div class="container">
+        <h1 class="left-content-margin"><?php print $title; ?></h1>
+      </div>
+    </div>
+  <?php endif; ?>
+  </div>
   <div class="container">
     <div class="row">
-    <div class="main-container-margin">
+    <?php if (!empty($title) && !$is_front) : ?>
+    <?php endif; ?>
     <?php if (!empty($page['left_column'])): ?>
       <aside class="col-sm-3 hidden-xs" role="complementary">
         <?php print render($page['left_column']); ?>
@@ -147,11 +159,8 @@
     <section<?php print $content_column_class; ?>>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
-      <div class="main-content-margin">
+      <div class="main-content-margin left-content-margin">
         <?php print render($title_prefix); ?>
-        <?php if (!empty($title) && !$is_front) : ?>
-          <h1><?php print $title; ?></h1>
-        <?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php print $messages; ?>
         <?php if (!empty($tabs)): ?>
@@ -175,7 +184,6 @@
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
 
-      </div><!-- /main-container-margin -->
     </div><!-- /row -->
   </div><!-- /container -->
 </div><!-- /main-container -->
