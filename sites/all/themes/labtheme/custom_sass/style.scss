@@ -10,13 +10,21 @@ body {
   color: $body-color;
 }
 
-a {
-  color: $link-color;
+p {
+  margin: 0 0 20px;
 }
 
+a {
+  color: $link-color;
+  font-weight: $semi-font;
+  text-decoration: underline;
+}
+
+/*
 h1, h2, h3, h4, strong {
   font-weight: normal;
 }
+*/
 
 h1 {
   font-size: $h1-size-lg;
@@ -43,6 +51,8 @@ h3 {
   font-family: $h3-style;
   line-height: $h3-height-lg;
   margin: $h3-margin-lg;
+  font-weight: $bold-weight;
+  font-style: italic;
 }
 
 header {
@@ -95,6 +105,8 @@ header {
   color: $navlink-link-lg;
   font-size: $navlink-size-lg;
   padding: $navlink-padding-lg;
+  text-decoration: none;
+  font-weight: $lt-font;
 }
 
 .nav > li > a:hover,
@@ -107,12 +119,22 @@ header {
 
 .hero {
   width: auto;
-  h1 {
-    font-size: $hero-size-lg;
-    color: $hero-color;
-    font-family: $hero-style;
-    margin: $hero-position;
-  }
+  .hero-text {
+    z-index: 50;
+    margin-top: -40px;
+    width: 100%;
+    left: 0;
+    h1 {
+      font-size: $hero-font-size-lg;
+      color: $hero-color;
+      font-family: $hero-style;
+      background: rgba(67, 112, 152, .75);
+      font-weight: $lt-font;
+      display: block;
+      margin: 0 auto;
+      width: 60%;
+      padding: 60px 100px;
+    }
   /*
   .hero-img {
     height: $hero-img-ht;
@@ -120,6 +142,11 @@ header {
     background-size: cover;
   }
   */
+  }
+}
+
+p.home-bottom-margin {
+  margin-bottom: 140px;
 }
 
 .submenu {
@@ -216,6 +243,10 @@ header {
   li {
     margin-bottom: 15px;
   }
+}
+
+.absolute {
+  position: absolute;
 }
 
 .img-float {

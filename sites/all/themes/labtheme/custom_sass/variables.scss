@@ -39,6 +39,7 @@ $lt-font: 300;
 $book-font: 400;
 $med-font: 500;
 $semi-font: 600;
+$bold-weight: 700;
 
 
 
@@ -56,9 +57,9 @@ $content-area-color: $white;
 
 $hero-position: 0;
 $hero-size-lg: 0;
-$hero-font-size-lg: 2.5rem;
-$hero-color: $sienna;
-$hero-style: $raleway-lt;
+$hero-font-size-lg: 4.3rem;
+$hero-color: $white;
+$hero-style: $body-font;
 $hero-img-ht: 400px;
 $hero-img-img: url('../images/hero_img2_reduced.jpg') 0 0 no-repeat;
 
@@ -86,7 +87,7 @@ $submenu-link-font: $book-font;
 $body-color: $black;
 $body-size: 1.55em;
 $body-height: 1.5;
-$link-color: $med-dk-blue;
+$link-color: $orange;
 
 
 $main-container-margin-lg: 78px 0 0 0;
@@ -99,17 +100,17 @@ $h1-style: $karmina;
 $h1-height-lg: 1.2em;
 $h1-margin-lg: 0 0 -23px 0;
 
-$h2-size-lg: 2.0rem;
+$h2-size-lg: 3.8rem;
 $h2-color: $med-blue;
 $h2-style: $karmina;
 $h2-height-lg: 1.5em;;
 $h2-margin-lg: 20px 0 0 0;
 
-$h3-size-lg: 1.0em;
+$h3-size-lg: 3rem;
 $h3-color: $black;
 $h3-style: $karmina;
 $h3-height-lg: 1.0em;
-$h3-margin-lg: 1.3em 0 0.05em 0;
+$h3-margin-lg: 10px 0 0 0;
 
 $paragraph-margin: 0 0 1.0em 0;
 $list-margin-lg: -0.8em 0 0.5em 0.8em;
@@ -126,7 +127,7 @@ h1, h2, h3, h4, strong {
 }
 
 strong {
-  font-family: $semi-font;
+  font-weight: $med-font;
 }
 
 ////////////
