@@ -308,9 +308,41 @@ footer {
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-nav > li > a {
+    padding: 11px 30px 14px 30px;
+    font-size: 22px;
+  }
+  .hero {
+    .hero-text {
+      h1 {
+        font-size: 3.3rem;
+        padding: 40px 60px;
+        width: 70%;
+      }
+    }
+  }
+  h1 {
+    font-size: 5.3rem;
+  }
+  h2 {
+    font-size: 3.4rem;
+  }
+  h3 {
+    font-size: 2.8rem;
+  }
+  .main-container {
+    font-size: 1.45em;
+  }
 }
 
 @media (max-width: 991px) {
+  header {
+    .block-search {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   .footer-logos {
     p, a {
       margin-right: 0;
@@ -320,6 +352,7 @@ footer {
       img {
         margin-left: auto;
         margin-right: auto;
+        width: 80%;
       }
     }
     a {
@@ -330,8 +363,11 @@ footer {
       float: none !important;
     }
   }
-  .footer-legal {
+  .footer-legal,
+  .footer-legal .legal {
     text-align: center;
+  }
+  .footer-legal {
     ul {
       float: none;
       display: inline-block;
@@ -341,15 +377,59 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  header {
+    padding: 15px 0 30px;
+    .block-search {
+      margin-top: 25px;
+    }
+  }
+  .navbar-nav > li > a {
+    padding: 9px 20px 12px 20px;
+    font-size: 19px;
+  }
+  .navbar-nav {
+    .dropdown-menu {
+      padding: 0;
+      li > a {
+        padding: 9px 20px 12px 20px;
+        font-size: 19px;
+      }
+    }
+  }
+  .hero {
+    .hero-text {
+      margin-top: -30px;
+      h1 {
+        font-size: 3.1rem;
+        padding: 30px 50px;
+        width: 70%;
+      }
+    }
+  }
+  h1 {
+    font-size: 4.9rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+  }
+  .main-container {
+    font-size: 1.4em;
+  }
+  .main-container-margin {
+    margin: 60px 0 0 0;
+  }
+  .main-content-margin,
+  .left-content-margin {
+    margin-left: 6%;
+  }
+
 }
 
 @media (max-width: 767px) {
-  .navbar-toggle {
-    .icon-bar {
-      background: $white;
-      height: 3px;
-    }
-  }
+
 
   .main-container {
     ul {
@@ -357,5 +437,94 @@ footer {
     }
   }
 
+  header {
+    padding: 10px 0 0;
+    .block-search {
+      margin-top: 18px;
+    }
+    .logo {
+      margin: 0 auto;
+      display: block;
+      width: 80%;
+    }
+    .logo img {
+      margin-top: 10px;
+    }
+  }
+  .navbar-header {
+    background: $orange;
+  }
+
+  .navbar-toggle {
+    padding: 3px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .icon-bar {
+      background: $dk-blue;
+      height: 3px;
+      width: 25px;
+    }
+  }
+  .navbar-nav > li > a {
+    padding: 9px 20px 12px 20px;
+    font-size: 19px;
+  }
+  .navbar-nav {
+    .dropdown-menu {
+      padding: 0;
+      li > a {
+        padding: 9px 20px 12px 20px;
+        font-size: 19px;
+      }
+    }
+  }
+  .hero {
+    .absolute {
+      position: relative;
+    }
+    .hero-text {
+      margin-top: 8px;
+      h1 {
+        font-size: 2.3rem;
+        padding: 10px 20px 12px;
+        width: 100%;
+      }
+    }
+  }
+  .front {
+    .main-container-margin,
+    .main-content-margin {
+      margin: 0;
+    }
+  }
+  p.home-bottom-margin {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 4.0rem;
+    padding: 0 10px;
+    margin-bottom: -18px;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+  }
+  .main-container {
+    font-size: 1.35em;
+  }
+  .main-container-margin {
+    margin-top: 40px;
+  }
+  .main-content-margin,
+  .left-content-margin {
+    margin-left: 0;
+  }
+  .main-content-margin {
+    margin: 20px 0 40px 0;
+    padding-left: 10px;
+  }
 }
 

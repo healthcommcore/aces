@@ -74,9 +74,9 @@
  */
 ?>
 <?php
-  $logo_width = 'col-sm-9';
+  $logo_width = 'col-md-9 col-sm-6';
   if (!empty($page['header_center'])) {
-    $logo_width = 'col-sm-6';
+    $logo_width = 'col-md-6';
   }
 ?>
 
@@ -86,7 +86,7 @@
       <?php if ($logo): ?>
       <div class="<?php print $logo_width; ?>">
           <a class="logo navbar-btn" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+            <img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
           </a>
         </div>
       <?php endif; ?>
@@ -96,7 +96,7 @@
       </div>
     <?php endif; ?>
     <?php if (!empty($page['header_right'])): ?>
-      <div class="col-sm-3">
+      <div class="col-md-3 col-sm-push-2 col-sm-4">
         <?php print render($page['header_right']); ?>
       </div>
     <?php endif; ?>
