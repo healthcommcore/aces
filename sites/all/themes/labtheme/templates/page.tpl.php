@@ -74,7 +74,7 @@
  */
 ?>
 <?php
-  $logo_width = 'col-md-9 col-sm-6';
+  $logo_width = 'col-md-6';
   if (!empty($page['header_center'])) {
     $logo_width = 'col-md-6';
   }
@@ -96,7 +96,7 @@
       </div>
     <?php endif; ?>
     <?php if (!empty($page['header_right'])): ?>
-      <div class="col-md-3 col-sm-push-2 col-sm-4">
+      <div class="col-md-4 col-md-push-2">
         <?php print render($page['header_right']); ?>
       </div>
     <?php endif; ?>
